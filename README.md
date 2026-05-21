@@ -1,7 +1,7 @@
 # annotate-paper-skill
 
-一个用于在 Zotero PDF 上自动生成语义化、彩色高亮批注的 skill。
-可以放在llm-for-zotero的skil目录中
+放在llm-for-zotero的skil目录中一个用于在 Zotero PDF 上自动生成语义化、彩色高亮批注的 skill。
+
 
 
 ## 概述
