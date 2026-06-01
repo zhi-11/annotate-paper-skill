@@ -68,11 +68,12 @@ def normalize_text(text: str) -> str:
 
 def normalize_token(token: str) -> str:
     token = normalize_text(token)
-    token = token.strip(" \t\r\n.,;:!?()[]{}<>\"'`~|/\\")
+    token = token.strip(" \t\r\n.,;:!?()[]{}<>\"'`~|/\\-")
     return token.casefold()
 
 def tokenize(text: str) -> List[str]:
-    return [tok for part in text.split() if (tok := normalize_token(part))]
+    parts = re.split(r'[\s-]+', text)
+    return [tok for part in parts if (tok := normalize_token(part))]
 
 # =========================================================
 # IO
@@ -114,14 +115,30 @@ def page_words(page: fitz.Page):
     words.sort(key=lambda w: (w[5], w[6], w[7], w[1], w[0]))
     out = []
     for x0, y0, x1, y1, text, block, line, word in words:
-        out.append({
-            "rect": (float(x0), float(y0), float(x1), float(y1)),
-            "text": text,
-            "norm": normalize_token(text),
-            "block": int(block),
-            "line": int(line),
-            "word": int(word),
-        })
+        norm = normalize_token(text)
+        if not norm:
+            continue
+        sub_tokens = norm.split('-')
+        if len(sub_tokens) > 1:
+            for sub in sub_tokens:
+                if sub:
+                    out.append({
+                        "rect": (float(x0), float(y0), float(x1), float(y1)),
+                        "text": sub,
+                        "norm": sub,
+                        "block": int(block),
+                        "line": int(line),
+                        "word": int(word),
+                    })
+        else:
+            out.append({
+                "rect": (float(x0), float(y0), float(x1), float(y1)),
+                "text": text,
+                "norm": norm,
+                "block": int(block),
+                "line": int(line),
+                "word": int(word),
+            })
     return out
 
 # =========================================================
@@ -174,6 +191,22 @@ def locate_on_page(words, target_tokens):
 # =========================================================
 # Global locate with multi-stage fallback
 # =========================================================
+
+
+def take_first_contiguous_quads(quads, page):
+    if len(quads) <= 1:
+        return quads
+    sorted_quads = sorted(quads, key=lambda q: (q.rect.y0, q.rect.x0))
+    seen_texts = set()
+    result = []
+    for q in sorted_quads:
+        text_in_quad = page.get_textbox(q.rect).strip()
+        normalized = " ".join(text_in_quad.split())
+        if normalized in seen_texts:
+            break
+        seen_texts.add(normalized)
+        result.append(q)
+    return result
 
 def not_found_result(raw_text, target, reason):
     return {
@@ -255,7 +288,7 @@ def locate_target(doc: fitz.Document, target: Dict[str, Any]):
         page = doc[page_index]
         quads = page.search_for(search_text, quads=True)
         if quads:
-            return build_match_result(raw_text, target, page_index, page, quads, "search_for")
+            return build_match_result(raw_text, target, page_index, page, take_first_contiguous_quads(quads, page), "search_for")
 
     # ---------- Stage 2: exact token match ----------
     print(f"  -> [exact token] {raw_text[:60]}...")
@@ -388,7 +421,7 @@ for (const item of items) {{
     const rects = item.zoteroRects;
     const pageIndex = item.pageIndex;
     const pageHeight = item.pageHeight;
-    const topY = Math.round(pageHeight - rects[0][3]).toString().padStart(5, '0');
+    const topY = ('00000' + Math.round(pageHeight - rects[0][3])).slice(-5);
     const ann = new Zotero.Item('annotation');
     ann.libraryID = attachment.libraryID;
     ann.parentItemID = attachment.id;
@@ -397,7 +430,7 @@ for (const item of items) {{
     ann.annotationComment = item.comment;
     ann.annotationColor = item.color;
     ann.annotationPageLabel = item.pageLabel;
-    ann.annotationSortIndex = `${{String(pageIndex).padStart(5, '0')}}|000000|${{topY}}`;
+    ann.annotationSortIndex = `${{('00000' + pageIndex).slice(-5)}}|000000|${{topY}}`;
     ann.annotationPosition = JSON.stringify({{ pageIndex, rects }});
     ann.addTag('{AI_TAG}');
     const id = await ann.saveTx();

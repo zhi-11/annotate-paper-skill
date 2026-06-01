@@ -66,3 +66,32 @@ skills/
 - 跨页批注可能会出错
 - AI不会为批注打上tag，但是脚本会自动生成一个`ai批注`的tag
 - 作者只使用了`deepseek-v4-pro`和`deepseek-v4-flash`，两者皆可成功完成批注
+
+---
+
+## annotate-paragraphs：段落页边批注（半成品）
+
+`annotate-paragraphs` 是另一个 skill，功能是为 PDF 正文段落生成一句话中文概述，并以**页边 free-text 批注**的形式放置在段落旁边（左/右页边距自动选择）。
+
+与 `annotate-paper` 的区别：
+- `annotate-paper`：定位具体句子/短文本，做高亮 + 评论
+- `annotate-paragraphs`：定位段落起始位置，在页边空白处放置段落概述
+
+### 当前状态：半成品，已弃坑
+
+这个 skill 的核心思路跑通了（PDF 段落定位 + 页边空间计算 + JS 写入 Zotero），脚本 `annotate_paragraphs.py` 可以正常工作，但有以下几个问题导致不再继续开发：
+
+1. **页边空间不可靠**：很多 PDF 的页边距太窄，free-text 批注框放不下内容时直接跳过，实际成功率不高
+2. **段落定位不精确**：用段落首句匹配段落位置时，跨页、跨栏、PDF 文字提取质量差等情况会导致定位失败
+3. **Zotero 原生不支持段落级 pageMargin text annotation**：当前用的是左上角 text annotation 模拟，视觉效果一般
+
+文件清单：
+```
+annotate-paragraphs.md          # skill 定义
+annotate-paragraphs/
+├── annotate_paragraphs.py      # PDF 段落定位 + JS 生成脚本
+├── test_annotation.js          # Zotero 内手动测试用的 JS
+└── annotation_plan.json        # 示例 annotation plan（AI 需要按此格式生成）
+```
+
+如果有兴趣捡起来继续改，重点方向是优化页边空间计算和段落首句匹配策略。

@@ -1,0 +1,214 @@
+{
+  "annotations": [
+    {
+      "paragraphs_id": "1",
+      "Paragraph Overview": "海胆胚胎内骨骼是研究发育基因调控网络和生物矿化的模型。",
+      "The first two sentences": "The development of the elaborate, calcified endoskeleton of sea urchin embryos is a model for understanding the dynamic nature of developmental gene regulatory networks and the control of biomineralization. While several signaling pathways have been shown to regulate gene expression and biomineral formation by sea urchin skeletogenic cells, important gaps in our understanding remain.",
+      "color": "#ffd400"
+    },
+    {
+      "paragraphs_id": "2",
+      "Paragraph Overview": "海胆骨骼发生中PMC的起源、迁移与合胞体形成过程。",
+      "The first two sentences": "Sea urchin skeletogenesis has been a valuable experimental model for studying cell fate specification, cell signaling, morphogenesis and biomineralization (McIntyre et al., 2014; Shashikant et al., 2018; Gildor et al., 2021). The cells that will produce the embryonic skeleton, the large micromeres, form at the 32-cell stage as a result of two, successive, unequal cell divisions (Summers et al., 1993).",
+      "color": "#5fb236"
+    },
+    {
+      "paragraphs_id": "3",
+      "Paragraph Overview": "PMC基因调控网络分为细胞自主的Phase 1和信号依赖的Phase 2。",
+      "The first two sentences": "A complex developmental gene regulatory network (dGRN) deployed in PMCs has been characterized extensively (Oliveri et al., 2008; Davidson and Peter, 2015; Martik et al., 2016; Shashikant et al., 2018; Gildor et al., 2021). This dGRN is regulated both temporally and spatially.",
+      "color": "#5fb236"
+    },
+    {
+      "paragraphs_id": "4",
+      "Paragraph Overview": "Phase 2中外源信号驱动PMC基因表达的空间区域化。",
+      "The first two sentences": "During Phase 2, cell-autonomous regulation of the PMC dGRN ends, and skeletogenesis becomes dependent on external signals. This shift in regulation drives a major change in spatial patterns of gene expression from an early pattern, in which effector genes are expressed uniformly by all PMCs, to a late pattern, in which expression is restricted to localized, distal sites of active skeletal growth in both the dorsal and ventral regions (Harkey et al., 1992; Guss and Ettensohn, 1997; Cheers and Ettensohn, 2005; Sun and Ettensohn, 2014).",
+      "color": "#5fb236"
+    },
+    {
+      "paragraphs_id": "5",
+      "Paragraph Overview": "多种信号通路影响骨骼发生但Phase 2调控机制尚不清楚。",
+      "The first two sentences": "Several signaling pathways have been shown to influence skeletogenesis including the RTK, TGFβ, Wnt and FAK-ROCK-ERK pathways (Röttinger et al., 2008; Piacentino et al., 2015; Sun and Ettensohn, 2017; Thomas et al., 2023; Hijaze et al., 2024; Layous et al., 2025). Although the localized production of signaling ligands might explain localized gene expression patterns within the PMC syncytium, the relationship between most of these signals and the regulation of the PMC dGRN during Phase 2 is poorly understood.",
+      "color": "#5fb236"
+    },
+    {
+      "paragraphs_id": "6",
+      "Paragraph Overview": "VEGF通路调控腹侧骨骼基因表达，暗示背侧存在未知信号。",
+      "The first two sentences": "One exception is the VEGF signaling pathway, which regulates gene expression in the ventral region of the PMC syncytium. The VEGF3 ligand is expressed by ectodermal cells overlying the ventrolateral clusters and is required for the formation of the triradiate spicule rudiments (Duloquin et al., 2007; Adomako-Ankomah and Ettensohn, 2013; Tarsis et al., 2022).",
+      "color": "#5fb236"
+    },
+    {
+      "paragraphs_id": "7",
+      "Paragraph Overview": "TGFβ/BMP信号参与背腹轴形成，pSmad1/5/8在背侧富集。",
+      "The first two sentences": "TGFβ signaling plays a key role in the formation of the dorsalventral axis during early sea urchin development (Duboc et al., 2004). Nodal and BMP2/4 are initially produced on the ventral side of the early embryo.",
+      "color": "#5fb236"
+    },
+    {
+      "paragraphs_id": "8",
+      "Paragraph Overview": "pSmad1/5/8从背侧外胚层逐步限制到背侧PMC合胞体。",
+      "The first two sentences": "It has previously been observed that pSmad1/5/8 is initially concentrated broadly on the dorsal side of the embryo prior to PMC ingression and becomes restricted to the DS by the late gastrula stage (Lapraz et al., 2009; Chen et al., 2011; Haillot et al., 2015). We sought to confirm and extend these observations by analyzing the distribution of pSmad1/5/8 at later developmental stages, when the dorsal skeleton is forming.",
+      "color": "#f19837"
+    },
+    {
+      "paragraphs_id": "9",
+      "Paragraph Overview": "K02288选择性抑制I型BMP受体用于Phase 2功能研究。",
+      "The first two sentences": "To test the role of BMP signaling specifically during Phase 2 without affecting early development, we employed a small molecule inhibitor, K02288, which selectively inhibits the Type I BMP receptors Alk1, Alk2, Alk3 and Alk6 (Kerr et al., 2015). Sea urchins have three Type I BMP receptors: Alk1/2, Alk3/6 and Alk4/5/7 (Lapraz et al., 2006).",
+      "color": "#2ea8e5"
+    },
+    {
+      "paragraphs_id": "10",
+      "Paragraph Overview": "K02288处理产生径向化多三射骨针，模拟BMP敲低表型。",
+      "The first two sentences": "To evaluate the efficacy and specificity of K02288, we tested whether treatment with the drug phenocopied morpholino knockdown of the early dorsal BMP pathway. L. variegatus embryos were fertilized, immediately transferred to carrier (DMSO)",
+      "color": "#f19837"
+    },
+    {
+      "paragraphs_id": "11",
+      "Paragraph Overview": "K02288完全消除DS和背侧外胚层中的pSmad1/5/8信号。",
+      "The first two sentences": "We next tested whether K02288 effectively inhibited Smad1/5/8 activation. S. purpuratus embryos were transferred to carrier (DMSO) or drug (1 μM K02288) in ASW at the early gastrula stage [28 hours post-fertilization (hpf )], and cultured for an additional 20 h (early pluteus stage).",
+      "color": "#f19837"
+    },
+    {
+      "paragraphs_id": "12",
+      "Paragraph Overview": "BMP抑制导致体杆缩短和RR远端弯曲缺失。",
+      "The first two sentences": "To test the function of BMP signaling during Phase 2 skeletogenesis, we treated embryos with K02288 continuously from the appearance of the tri-radiate spicule rudiments (mid-late gastrula stage) until the late pluteus stage (2 dpf ) (Fig. 3A). BMP inhibition resulted in pluteus larvae with a distinctive morphology.",
+      "color": "#f19837"
+    },
+    {
+      "paragraphs_id": "13",
+      "Paragraph Overview": "体杆生长受BMP抑制影响最大，平均长度仅为对照的30%。",
+      "The first two sentences": "To quantify the effects of BMP inhibition on skeletal growth, we measured the lengths of the five major skeletal elements: anterolateral rods, RRs, post-oral rods, body rods, and ventraltransverse rods in DMSO-treated and K02288-treated embryos. The average length of almost all skeletal elements, with the exception of the ventral-transverse rods, was significantly shorter in K02288-treated embryos compared to DMSO treated-siblings (Fig. 3F).",
+      "color": "#f19837"
+    },
+    {
+      "paragraphs_id": "14",
+      "Paragraph Overview": "HCR分析揭示alk1/2是首个在PMC中激活的BMP通路组分。",
+      "The first two sentences": "Although the expression patterns of some BMP pathway components have been partially characterized (Duboc et al., 2004; Lapraz et al., 2006; Ben-Tabou de-Leon et al., 2013; Piacentino et al., 2015), there has been no comprehensive analysis of the developmental expression of BMP ligands and receptors during sea urchin embryogenesis. We used HCR in situ labeling to observe the spatiotemporal expression patterns of the Type I BMP receptors (alk1/2, alk3/6 and alk4/5/7), the single Type 2 BMP-specific receptor (bmpr2) and both BMP ligands (bmp2/4 and bmp5/8) in L. variegatus (Fig. S1).",
+      "color": "#f19837"
+    },
+    {
+      "paragraphs_id": "15",
+      "Paragraph Overview": "bmpr2在胚胎中广泛表达，原肠胚后期在DS中仍可检测。",
+      "The first two sentences": "The only known Type 2 receptor for BMP ligands in sea urchins is bmpr2 (Lapraz et al., 2006). We found that bmpr2 was weakly and ubiquitously expressed throughout gastrulation (Fig. 4F).",
+      "color": "#f19837"
+    },
+    {
+      "paragraphs_id": "16",
+      "Paragraph Overview": "bmp2/4和bmp5/8在DS和RR远端PMC中高度富集表达。",
+      "The first two sentences": "The two BMP ligands, bmp2/4 and bmp5/8, showed very similar expression patterns within the skeletal syncytium (see also Luo and Su, 2012). At the late gastrula stage, only bmp2/4 was expressed at a detectable level in the PMC syncytium and was elevated in the dorsal region (Fig. 4J).",
+      "color": "#f19837"
+    },
+    {
+      "paragraphs_id": "17",
+      "Paragraph Overview": "K02288抑制背侧TF基因gata3和scl在DS及RR-PMC中的表达。",
+      "The first two sentences": "We next tested whether K02288 treatment inhibited the expression of genes that are normally selectively upregulated in the DS. During Phase 2, two TF-encoding genes, gata3 (also known as gataC) and scl, are selectively expressed in the DS of S. purpuratus (Solek et al., 2013).",
+      "color": "#f19837"
+    },
+    {
+      "paragraphs_id": "18",
+      "Paragraph Overview": "BMP配体bmp2/4和bmp5/8的表达依赖BMP信号自身维持。",
+      "The first two sentences": "Previous work showed that bmp2/4 expression in the DS is lost in embryos treated from gastrulation with dorsomorphin, another Type I BMP receptor inhibitor (Luo and Su, 2012). We tested whether K02288 had the same effect on bmp2/4 and whether its expression in the RR-PMCs was similarly dependent on BMP signaling.",
+      "color": "#f19837"
+    },
+    {
+      "paragraphs_id": "19",
+      "Paragraph Overview": "K02288选择性抑制PMC中BMP配体表达而不影响外胚层。",
+      "The first two sentences": "We also observed that bmp2/4 and bmp5/8 were normally expressed in the ectoderm of the oral hood and along the ventral side of the postoral arms (Fig. S2). Notably, K02288 treatment did not affect the expression of either mRNA in these regions, revealing a selective effect of BMP signaling on the expression of BMP ligands in PMCs.",
+      "color": "#f19837"
+    },
+    {
+      "paragraphs_id": "20",
+      "Paragraph Overview": "K02288使sm29在背侧和RR-PMC中的富集消失，表达均一化。",
+      "The first two sentences": "Several different restricted patterns of gene expression have been observed within the PMC syncytium (Sun and Ettensohn, 2014). Using K02288, we sought to identify genes with DS-specific expression that was reliant on BMP signaling.",
+      "color": "#f19837"
+    },
+    {
+      "paragraphs_id": "21",
+      "Paragraph Overview": "VEGF信号不参与DS和RR-PMC中BMP靶基因的表达调控。",
+      "The first two sentences": "It has been reported that the principal VEGF receptor, vegfr-Ig10, is expressed throughout the entire PMC syncytium albeit weakly in the DS compared to the strong expression at the growing arm tips (Duloquin et al., 2007). We observed the same pattern when using",
+      "color": "#f19837"
+    },
+    {
+      "paragraphs_id": "22",
+      "Paragraph Overview": "RNA-seq分析BMP和VEGF通路对Phase 2骨骼发生的贡献。",
+      "The first two sentences": "We next sought to determine the broader contribution of BMPsignaling to Phase 2 skeletogenesis. We performed bulk RNA-seq on embryos treated continuously with DMSO, 1 µM K02288 or 75 nM axitinib from the late gastrula/early prism stage, when the tri-radiate spicule rudiments had formed, until the late pluteus stage.",
+      "color": "#2ea8e5"
+    },
+    {
+      "paragraphs_id": "23",
+      "Paragraph Overview": "药物处理共鉴定1077个差异表达基因，132个对两种药物均响应。",
+      "The first two sentences": "Our initial analysis identified a total of 1077 genes that were significantly altered in expression (up or down) in embryos treated with axitinib or K02288 compared to controls (P≤0.05) (Tables S1-S4): 494 genes were significantly downregulated and 295 genes were significantly upregulated by axitinib treatment compared to controls, and 196 genes were significantly downregulated and 224 genes were significantly upregulated by K02288 treatment compared to controls.",
+      "color": "#f19837"
+    },
+    {
+      "paragraphs_id": "24",
+      "Paragraph Overview": "367个PMC富集基因中74个受信号调控，65个表达下调。",
+      "The first two sentences": "To focus specifically on genes expressed selectively by PMCs during Phase 2, we prepared a curated list of PMC-enriched genes expressed during late L. variegatus embryogenesis based on publicly available single-cell RNA-seq (scRNA-seq) data (Massri et al., 2021) and known gene expression patterns visualized by in situ hybridization (see Materials and Methods for additional details).",
+      "color": "#f19837"
+    },
+    {
+      "paragraphs_id": "25",
+      "Paragraph Overview": "BMP调控的基因编码骨针基质蛋白、金属蛋白酶等功能蛋白。",
+      "The first two sentences": "While only a small subset of PMC-specific genes was affected by K02288 (Fig. 7A), the affected genes encoded a variety of functional classes of proteins, several of which are known to play a role in skeletogenesis (Tables 1, 2). These included spicule matrix proteins, secreted matrix metalloproteinases and MSP130 family proteins.",
+      "color": "#f19837"
+    },
+    {
+      "paragraphs_id": "26",
+      "Paragraph Overview": "PMC的dGRN是发育基因调控网络动态性的典型案例。",
+      "The first two sentences": "The skeletogenic program deployed in PMCs provides a striking example of the dynamic nature of dGRNs. The initial deployment of the PMC dGRN (Phase 1) is controlled by molecular asymmetries present in the unfertilized egg and is independent of cell–cell signaling (Oliveri et al., 2008; Ettensohn, 2020; Kipryushina and Yakovlev, 2020; Molina and Lepage, 2020).",
+      "color": "#6c8f4b"
+    },
+    {
+      "paragraphs_id": "27",
+      "Paragraph Overview": "BMP通过正调控生物矿化蛋白支持背侧骨骼生长。",
+      "The first two sentences": "This work has identified the BMP signaling pathway as an important regulator of sea urchin skeletogenesis during Phase 2. Inhibition of BMP signaling led to significant skeletal growth defects on the dorsal side of the embryo.",
+      "color": "#6c8f4b"
+    },
+    {
+      "paragraphs_id": "28",
+      "Paragraph Overview": "Alk1/2可能是介导PMC合胞体中BMP信号的主要受体。",
+      "The first two sentences": "To identify candidate regulators of BMP signaling in the DS, we carried out a comprehensive analysis of the spatiotemporal expression patterns of the BMP ligands and receptors present in sea urchins, with a special focus on the expression of these genes during Phase 2 (Fig. 4, Fig. S1). We found that alk1/2 was strongly expressed by all PMCs during early development, but later became restricted within the syncytium to sites of active skeletal growth.",
+      "color": "#6c8f4b"
+    },
+    {
+      "paragraphs_id": "29",
+      "Paragraph Overview": "BMP可能通过自分泌方式直接调控PMC中的基因表达。",
+      "The first two sentences": "Our findings show that BMP signaling plays an important role in regulating gene expression in the DS. However, because signaling is active in multiple dorsal tissues, and because K02288 blocks signaling in all tissues, there are several possible scenarios by which such regulation could occur.",
+      "color": "#6c8f4b"
+    },
+    {
+      "paragraphs_id": "30",
+      "Paragraph Overview": "BMP配体在PMC合胞体中的表达通过正反馈自调控维持。",
+      "The first two sentences": "K02288 inhibits the expression of bmp2/4 and bmp5/8 in the DS during Phase 2 (Fig. 5G-H′,J-K′). This finding supports previous evidence that bmp2/4 expression is autoregulated in a positive fashion by the BMP pathway in the syncytium (Luo and Su, 2012) and indicates that bmp5/8 is similarly regulated.",
+      "color": "#6c8f4b"
+    },
+    {
+      "paragraphs_id": "31",
+      "Paragraph Overview": "VEGF信号类似BMP，通过持续正反馈调控自身受体表达。",
+      "The first two sentences": "Notably, axitinib treatment specifically downregulated vegfr-Ig10 expression (Table 3) and the expression intensity of vegfr-Ig10 was reduced when visualized by HCR (Figs 5, 6). This suggests that, similar to BMP signaling, continuous positive VEGF signaling regulates the VEGF signaling pathway itself during skeletogenesis.",
+      "color": "#6c8f4b"
+    },
+    {
+      "paragraphs_id": "32",
+      "Paragraph Overview": "RR远端PMC与背侧PMC共享分子特征，均为BMP信号中心。",
+      "The first two sentences": "Our work has also shown that the distal-tip RR-PMCs of L. variegatus share many features with the DS. The RRs were the only other skeletal structure to show a striking morphological defect in response to K02288, as treatment with the drug prevented the distal branching event in the RRs (Fig. 3).",
+      "color": "#6c8f4b"
+    },
+    {
+      "paragraphs_id": "33",
+      "Paragraph Overview": "BMP和VEGF通路在背腹侧基本独立运作调控骨骼生长。",
+      "The first two sentences": "The ligands that activate BMP and VEGF signaling are located on opposite sides of the embryo during Phase 2, and to a large extent these two pathways operate independently of one another in controlling gene expression and skeletal growth (Fig. 8). The skeletal defects observed following disruption of these two pathways during Phase 2 are very different from one another (Adomako-Ankomah and Ettensohn, 2013; this study).",
+      "color": "#6c8f4b"
+    },
+    {
+      "paragraphs_id": "34",
+      "Paragraph Overview": "gata3背侧限制依赖BMP激活和VEGF介导的腹侧抑制。",
+      "The first two sentences": "We also identified genes (25/74) that were regulated by both BMP and VEGF signaling. There are examples of genes that are expressed at high levels in PMCs both at the tips of the post-oral arms and the dorsal chain (Sun and Ettensohn, 2014), suggesting that some genes may be regulated in a positive manner by both signaling pathways.",
+      "color": "#6c8f4b"
+    },
+    {
+      "paragraphs_id": "35",
+      "Paragraph Overview": "仅20%的PMC富集基因受信号调控，提示存在非局部信号。",
+      "The first two sentences": "Our RNA-seq analysis showed that only about 20% of late, PMCenriched mRNAs were significantly affected by treatment with axitinib or K02288. Thus, the striking, localized effects of these pathways on skeletal growth are mediated through their control of relatively limited sub-circuitry within the PMC dGRN.",
+      "color": "#6c8f4b"
+    }
+  ]
+}
